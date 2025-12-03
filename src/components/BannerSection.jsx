@@ -39,7 +39,7 @@ function BannerSection() {
             <div className="image">
               <motion.image class="image"
                 animate={{ y: [0, -20, 0] }}
-                transition={{ duration: 0.6, repeat: Infinity }}
+                transition={{ duration: 0.7, repeat: Infinity }}
               >
                 <img src={imageone} alt="banner" width={"100%"}/>
               </motion.image>

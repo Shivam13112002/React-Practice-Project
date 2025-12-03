@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #052c76;
+  color: #00205e;
   margin: 0;
 }
 
@@ -94,7 +94,7 @@ h6 {
   padding: 15px 30px;
   text-decoration: unset;
   transition: all 0.5s;
-  background: #052c76;
+  background: #00205e;
 }
 
 .btn-primary:hover {
@@ -163,7 +163,7 @@ h6 {
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #052c76;
+  background-color: #00205e;
 }
 
 
@@ -260,7 +260,7 @@ header.main-header .header-inner ul.desktop-menu li a {
 }
 
 header.main-header .header-inner ul.desktop-menu li a:hover {
-  color: #052c76;
+  color: #00205e;
 }
 
 
@@ -304,7 +304,7 @@ header.main-header .header-inner ul.desktop-menu li a:hover {
 }
 
 .mobile-menu ul li a:hover {
-  color: #052c76;
+  color: #00205e;
 }
 
 
@@ -354,5 +354,5 @@ header.main-header .header-inner ul.desktop-menu li a:hover {
     cursor: pointer;
 }
 .tab-section .tab-buttons button.active {
-    background-color: #052c76;
+    background-color: #00205e;
 }
