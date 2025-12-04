@@ -1,3 +1,4 @@
+import { script } from "framer-motion/client";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -12,6 +13,7 @@ function MobileMenu() {
         <li><Link to="/services">Services</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/blog">Blog</Link></li>
       </ul>
 
       {/* Hamburger */}
@@ -33,9 +35,11 @@ function MobileMenu() {
           <li><Link to="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
           <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
           <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          <li><Link to="/blog" onClick={() => setIsOpen(false)}>Blog</Link></li>
         </ul>
-      </nav>
-    </>
+      </nav>     
+      
+    </>    
   );
 }
 

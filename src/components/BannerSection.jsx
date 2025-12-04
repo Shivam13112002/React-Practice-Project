@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import imageone from "../assets/tourist.jpg";
+import imageone from "../assets/image-5.jpg";
 
 function BannerSection() {
   return (
@@ -37,12 +37,7 @@ function BannerSection() {
 
           <div className="right-wrap">
             <div className="image">
-              <motion.image class="image"
-                animate={{ y: [0, -20, 0] }}
-                transition={{ duration: 0.7, repeat: Infinity }}
-              >
                 <img src={imageone} alt="banner" width={"100%"}/>
-              </motion.image>
             </div>
           </div>
 

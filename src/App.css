@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #00205e;
+  color: blue;
   margin: 0;
 }
 
@@ -94,7 +94,7 @@ h6 {
   padding: 15px 30px;
   text-decoration: unset;
   transition: all 0.5s;
-  background: #00205e;
+  background: blue;
 }
 
 .btn-primary:hover {
@@ -121,15 +121,41 @@ h6 {
 }
 
 .main-banner-section .row-wrapper .image {
-  height: 400px;
-  display: block;
+    height: 400px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-banner-section .row-wrapper .image:before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    top: -200%;
+    height: 400%;
+    background: linear-gradient(0deg,blue 40%,black 60%);
+    transition: opacity .3s ease;
+    animation: styles_rotate__YEup_ 2s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes styles_rotate__YEup_{
+  0% {
+    transform: translate(25%, 10%) rotate(0deg);
+  }
+  100% {
+      transform: translate(25%, 10%) rotate(1turn);
+  }
 }
 
 .main-banner-section .row-wrapper .image img {
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 5;
+    padding: 4px;
 }
 
 
@@ -163,7 +189,7 @@ h6 {
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #00205e;
+  background-color: blue;
 }
 
 
@@ -260,7 +286,7 @@ header.main-header .header-inner ul.desktop-menu li a {
 }
 
 header.main-header .header-inner ul.desktop-menu li a:hover {
-  color: #00205e;
+  color: blue;
 }
 
 
@@ -304,7 +330,7 @@ header.main-header .header-inner ul.desktop-menu li a:hover {
 }
 
 .mobile-menu ul li a:hover {
-  color: #00205e;
+  color: blue;
 }
 
 
@@ -354,5 +380,103 @@ header.main-header .header-inner ul.desktop-menu li a:hover {
     cursor: pointer;
 }
 .tab-section .tab-buttons button.active {
-    background-color: #00205e;
+    background-color: blue;
 }
+
+
+.blog-section {
+    padding: 70px 0px;
+    background-color: #f3f7ff;
+    position: relative;
+}
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.blog-list .blog-card {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px 20px 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0px rgb(0 0 0 / 10%);
+}
+.blog-list .blog-card .image{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.blog-list .blog-card .blog-content-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.blog-list .blog-card img.blog-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.blog-list .blog-card .blog-link {
+    margin-top: auto;
+    display: inline-block;
+    font-size: 17px;
+    text-decoration: unset;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: blue;
+}
+.blog-list .blog-card .blog-content-box .blog-content {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.keenslider-section{
+  padding: 100px 0px;
+  position: relative;
+}
+.keenslider-section .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.keenslider-section .scene {
+  width: 330px;
+  height: 260px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.keenslider-section .scene .carousel.keen-slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: visible;
+  transform: translateZ(-350px);
+  transform-style: preserve-3d;
+}
+
+.keenslider-section .carousel__cell {
+  position: absolute;
+  width: 300px;
+  left: 10px;
+  height: 260px;
+}
+
+.keenslider-section .carousel__cell .image {
+    height: 100%;
+    width: 100%;
+    border: 5px solid #000000;
+}
+.keenslider-section .carousel__cell .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+

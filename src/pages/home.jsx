@@ -4,6 +4,7 @@ import LogoSliderSection from "../components/LogoSliderSection";
 import GallerySection from "../components/GallerySection";
 import ContentSection from "../components/ContentSection";
 import TabSection from "../components/TabSection.jsx";
+import KeenSlider from "../components/KeenSlider.jsx";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <GallerySection />
       <ContentSection />
       <TabSection />
+      <KeenSlider />
     </>
   );
 } 
