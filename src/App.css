@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: blue;
+  color: #345A46;
   margin: 0;
 }
 
@@ -72,7 +72,6 @@ h6 {
   font-size: 20px;
   line-height: 120%;
   margin-bottom: 15px;
-  background-color: #000;
 }
 
 * {
@@ -94,7 +93,7 @@ h6 {
   padding: 15px 30px;
   text-decoration: unset;
   transition: all 0.5s;
-  background: blue;
+  background: #345A46;
 }
 
 .btn-primary:hover {
@@ -134,7 +133,7 @@ h6 {
     width: 200%;
     top: -200%;
     height: 400%;
-    background: linear-gradient(0deg,blue 40%,black 60%);
+    background: linear-gradient(0deg,#345A46 40%,rgba(255, 255, 255, 0) 60%);
     transition: opacity .3s ease;
     animation: styles_rotate__YEup_ 2s linear infinite;
     transform-origin: 50% 50%;
@@ -155,7 +154,7 @@ h6 {
     object-fit: cover;
     position: relative;
     z-index: 5;
-    padding: 4px;
+    padding: 10px;
 }
 
 
@@ -189,7 +188,7 @@ h6 {
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: blue;
+  background-color: #345A46;
 }
 
 
@@ -286,7 +285,7 @@ header.main-header .header-inner ul.desktop-menu li a {
 }
 
 header.main-header .header-inner ul.desktop-menu li a:hover {
-  color: blue;
+  color: #345A46;
 }
 
 
@@ -330,7 +329,7 @@ header.main-header .header-inner ul.desktop-menu li a:hover {
 }
 
 .mobile-menu ul li a:hover {
-  color: blue;
+  color: #345A46;
 }
 
 
@@ -380,7 +379,7 @@ header.main-header .header-inner ul.desktop-menu li a:hover {
     cursor: pointer;
 }
 .tab-section .tab-buttons button.active {
-    background-color: blue;
+    background-color: #345A46;
 }
 
 
@@ -426,7 +425,7 @@ header.main-header .header-inner ul.desktop-menu li a:hover {
     text-decoration: unset;
     font-weight: 600;
     text-transform: capitalize;
-    color: blue;
+    color: #345A46;
 }
 .blog-list .blog-card .blog-content-box .blog-content {
     margin-bottom: 20px;
@@ -480,3 +479,44 @@ header.main-header .header-inner ul.desktop-menu li a:hover {
 
 
 
+.contactus-section {
+    padding: 100px 0px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+form.contact-us-form {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+form.contact-us-form .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+form.contact-us-form .form-row .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+input, select, textarea {
+    background-color: #fff;
+    box-shadow: 0 0 5px 0px rgba(0,0,0,0.2);
+    border: 1px solid #b0b0b0;
+    padding: 15px 20px;
+    font-size: 15px;
+    width: 100%;
+}
+form.contact-us-form .form-row .wrapper.w-100{
+  width: 100%;
+  display: unset;
+}
+select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    appearance: none;
+    background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+}

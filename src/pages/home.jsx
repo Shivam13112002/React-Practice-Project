@@ -5,6 +5,7 @@ import GallerySection from "../components/GallerySection";
 import ContentSection from "../components/ContentSection";
 import TabSection from "../components/TabSection.jsx";
 import KeenSlider from "../components/KeenSlider.jsx";
+import ContactUsSection from "../components/ContactUsSection.jsx";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <ContentSection />
       <TabSection />
       <KeenSlider />
+      <ContactUsSection/>
     </>
   );
 } 
