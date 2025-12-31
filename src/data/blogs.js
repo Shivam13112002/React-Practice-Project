@@ -1,6 +1,6 @@
-import img1 from "../assets/tourist.jpg";
-import img2 from "../assets/tourist.jpg";
-import img3 from "../assets/tourist.jpg";
+import img1 from "@/assets/images/tourist.jpg";
+import img2 from "@/assets/images/tourist.jpg";
+import img3 from "@/assets/images/tourist.jpg";
 
 
 const blogs = [

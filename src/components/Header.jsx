@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SiteLogo from "../assets/main-logo.svg";
+import SiteLogo from "@/assets/images/main-logo.svg";
 import MobileMenu from "../components/MobileMenu";
 
 function Header() {

@@ -257,13 +257,6 @@ header.main-header .header-inner .logo a img {
   position: relative;
 }
 
-
-header.main-header .header-inner ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 header.main-header .header-inner ul.desktop-menu {
   display: flex;
   list-style: none;
@@ -492,31 +485,56 @@ form.contact-us-form {
 form.contact-us-form .form-row {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     position: relative;
 }
 form.contact-us-form .form-row .wrapper {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 15px;
+    gap: 20px;
 }
 input, select, textarea {
     background-color: #fff;
-    box-shadow: 0 0 5px 0px rgba(0,0,0,0.2);
-    border: 1px solid #b0b0b0;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    border: unset;
     padding: 15px 20px;
     font-size: 15px;
     width: 100%;
+    color: #000;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif !important;
+}
+input::placeholder, select::placeholder, textarea::placeholder {
+    color: #000;
+}
+input:focus, select:focus, textarea:focus{
+    outline: unset;
 }
 form.contact-us-form .form-row .wrapper.w-100{
   width: 100%;
   display: unset;
 }
 select {
-    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
     appearance: none;
-    background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
+    background-image: url(../src/assets/select-arrow.svg);
     background-repeat: no-repeat;
     background-position: right .75rem center;
     background-size: 16px 12px;
+    padding: 15px 40px 15px 20px;
+}
+input[type="submit"] {
+    background-color: green;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: unset;
+    transition: all 0.5s;
+}
+input[type="submit"]:hover {
+    background-color: #000;
+}
+textarea{
+  height: 120px;
+  resize: unset;
 }

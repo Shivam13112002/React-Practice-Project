@@ -1,23 +1,24 @@
+import React from "react";
 import { div } from "framer-motion/client";
 
 export default function ContactUsSection(){
     return(
         <div className="contactus-section">
             <div className="container">        
-                <h1 class="text-center mb-40">Contact Us</h1>        
+                <h1 className="text-center mb-40">Contact Us</h1>        
                 <form action="" className="contact-us-form">
                     <div className="form-row">
                         <div className="wrapper w-50">
                             <div className="form-wrap">
-                                <input type="name" placeholder="Full Name"/>
+                                <input type="name" placeholder="Full Name" required/>
                             </div>
                             <div className="form-wrap">
-                                <input type="email" placeholder="Emial Address"/>
+                                <input type="email" placeholder="Emial Address" required/>
                             </div>
                         </div>
                         <div className="wrapper w-50">
                             <div className="form-wrap">
-                                <input type="phone" placeholder="Phone No"/>
+                                <input type="phone" placeholder="Phone No" required/>
                             </div>
                             <div className="form-wrap">
                                 <select name="cars" id="cars">
@@ -29,9 +30,7 @@ export default function ContactUsSection(){
                             </div>
                         </div>
                         <div className="wrapper w-100">
-                            <textarea id="cars">
-                                Messages
-                            </textarea>
+                            <textarea placeholder="Messages" ></textarea>
                         </div>
                         <div className="wrapper w-100">
                             <input type="submit" />

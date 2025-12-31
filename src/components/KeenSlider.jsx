@@ -2,12 +2,12 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-import ImageOne from "../assets/mountain.jpg";
-import ImageTwo from "../assets/tourist.jpg";
-import ImageThree from "../assets/image-3.jpg";
-import ImageFour from "../assets/image-4.jpg";
-import ImageFive from "../assets/image-5.jpg";
-import ImageSix from "../assets/image-6.jpg";
+import ImageOne from "@/assets/images/mountain.jpg";
+import ImageTwo from "@/assets/images/tourist.jpg";
+import ImageThree from "@/assets/images/image-3.jpg";
+import ImageFour from "@/assets/images/image-4.jpg";
+import ImageFive from "@/assets/images/image-5.jpg";
+import ImageSix from "@/assets/images/image-6.jpg";
 
 
 const carousel = (slider) => {

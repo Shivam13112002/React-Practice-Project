@@ -6,7 +6,6 @@ import Services from "./pages/Services.jsx";
 import Contact from "./pages/Contact.jsx";
 import Blog from "./pages/Blog.jsx";
 import CustomCursor from "./components/CustomCursor";
-import "./custom.js";
 import "./App.css";
 import "./Responsive.css";
 

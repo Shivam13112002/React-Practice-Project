@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import imageone from "../assets/image-5.jpg";
+import imageone from "@/assets/images/image-5.jpg";
 
 function BannerSection() {
   return (

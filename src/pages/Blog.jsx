@@ -1,6 +1,6 @@
 import React from "react";
-import BlogCard from "../components/BlogCard";
-import blogs from "../data/blogs";
+import BlogCard from "@/components/BlogCard";
+import blogs from "@/data/blogs";
 
 function Blog() {
   return (

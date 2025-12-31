@@ -1,9 +1,13 @@
-import React from "react";
+import { useState } from "react";
 
-export default function About() {
-  return (
+export default function Counter(){
+  const [count, setCount] = (useState(0));
+
+  return(
     <>
-      <h1>About Us</h1>
+      <h2>{count}</h2>
+      <button onClick={() => setCount(count + 1)}>+ Add Number</button>
+      <button onClick={() => setCount(count > 1 ? count - 1 : 1)}>- Minus Number</button>
     </>
   );
-} 
+}

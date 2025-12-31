@@ -1,10 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import image1 from "../assets/aetna.png";
-import image2 from "../assets/cigna.png";
-import image3 from "../assets/humana.png";
-import image4 from "../assets/kaiser.png";
-import image5 from "../assets/united-healthcare.png";
+import image1 from "@/assets/images/aetna.png";
+import image2 from "@/assets/images/cigna.png";
+import image3 from "@/assets/images/humana.png";
+import image4 from "@/assets/images/kaiser.png";
+import image5 from "@/assets/images/united-healthcare.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
